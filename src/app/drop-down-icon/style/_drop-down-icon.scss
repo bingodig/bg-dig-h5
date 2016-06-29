@@ -1,0 +1,54 @@
+//$icon-width: 48px;
+
+.dig-drop-down-icon {
+  display: inline-block;
+  //width: $icon-width !important;
+  position: relative;
+  //height: $desktop-toolbar-height;
+  font-size: $desktop-drop-down-menu-font-size;
+  cursor: pointer;
+
+  &.dig-open {
+    .dig-icon-highlight {
+      background-color: rgba(0, 0, 0, .1);
+    }
+
+    .dig-menu-control,
+    .dig-menu-control:hover {
+      .dig-menu-control-bg {
+        opacity: 0;
+      }
+      .dig-menu-label {
+        top: ($desktop-toolbar-height / 2);
+        opacity: 0;
+      }
+    }
+
+    .dig-menu {
+      opacity: 1;
+    }
+  }
+
+  .dig-menu {
+   @include ease-out();
+
+    .dig-menu-item {
+      padding-right: ($icon-size + ($desktop-gutter-less*2));
+      height: $desktop-drop-down-menu-item-height;
+      line-height: $desktop-drop-down-menu-item-height;
+    }
+  }
+
+  &.dig-leftBottom{
+    .dig-menu {
+      right: 5px;
+      top: 30px;
+    }
+  }
+
+  &.dig-RightBottom{
+    .dig-menu {
+      top: 30px;
+    }
+  }
+}

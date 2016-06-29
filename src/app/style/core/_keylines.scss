@@ -1,0 +1,17 @@
+// generates:
+// .dig-key-width-1  { @include dig-keywidth(1); }
+// .dig-key-height-1  { @include dig-keyheight(1); }
+// for 10 classes
+@mixin dig-generate($num) {
+  @for $i from 1 to $num {
+    .dig-key-height-#{$i} {
+      height: ($i * $desktop-keyline-increment);
+    }
+
+    .dig-key-width-#{$i} {
+      width: ($i * $desktop-keyline-increment);
+    }
+  }
+}
+
+@include dig-generate(10);

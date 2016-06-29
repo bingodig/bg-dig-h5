@@ -1,0 +1,24 @@
+.dig-enhanced-button {
+
+  border: 0;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+  
+  &.dig-is-link-button {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.dig-is-disabled {
+      cursor: default;
+    }
+  }
+
+}

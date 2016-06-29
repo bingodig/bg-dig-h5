@@ -1,0 +1,27 @@
+.dig-breadcrumb {
+  color: #999;
+  font-size: $font-size-base;
+  a {
+    color: $text-color;
+  }
+
+  & > span:last-child {
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  & > span:last-child .dig-breadcrumb-separator {
+    display: none;
+  }
+
+  .dig-font-icon{
+    font-size: 17px;
+    top: 3px;
+    right: 2px;
+  }
+}
+
+.dig-breadcrumb-separator{
+  margin: 0 8px;
+  color: $border-color-base;
+}

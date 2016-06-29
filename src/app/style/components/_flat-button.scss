@@ -1,0 +1,102 @@
+.dig-flat-button {
+
+  @include ease-out();
+  @extend %dig-font-style-button;
+  border-radius: 2px;
+  user-select: none;
+
+  position: relative;
+  overflow: hidden;
+  background-color: $flat-button-color;
+  color: $flat-button-text-color;
+  line-height: $button-height;
+  min-width: $button-min-width;
+  padding: 0;
+  margin: 0;
+
+  //This is need so that ripples do not bleed
+  //past border radius.
+  //See: http://stackoverflow.com/questions/17298739/css-overflow-hidden-not-working-in-chrome-when-parent-has-border-radius-and-chil
+  transform: translate3d(0, 0, 0);
+
+  .dig-font-icon {
+    display: inline-block;
+    float: left;
+    line-height: 36px;
+    padding-left: 12px;
+    margin-right: -8px;
+    color: $black;
+  }
+
+  .dig-touch-ripple {
+    .dig-ripple-circle-inner {
+      background-color: $flat-button-ripple-color;
+    }
+  }
+
+  .dig-focus-ripple {
+    .dig-focus-ripple-inner {
+      background-color: $flat-button-focus-ripple-color;
+    }
+  }
+
+  .dig-flat-button-label {
+    position: relative;
+    padding: 0 $desktop-gutter-less;
+  }
+
+  &:hover,
+  &.dig-is-keyboard-focused {
+    background-color: $flat-button-hover-color;
+  }
+
+  &.dig-is-disabled {
+    color: $flat-button-disabled-text-color;
+
+    &:hover {
+      background-color: inherit;
+    }
+  }
+
+  &.dig-is-primary {
+    color: $flat-button-primary-text-color;
+
+    &:hover,
+    &.dig-is-keyboard-focused {
+      background-color: $flat-button-primary-hover-color;
+    }
+
+    .dig-touch-ripple {
+      .dig-ripple-circle-inner {
+        background-color: $flat-button-primary-ripple-color;
+      }
+    }
+
+    .dig-focus-ripple {
+      .dig-focus-ripple-inner {
+        background-color: $flat-button-primary-focus-ripple-color;
+      }
+    }
+  }
+
+  &.dig-is-secondary {
+    color: $flat-button-secondary-text-color;
+
+    &:hover,
+    &.dig-is-keyboard-focused {
+      background-color: $flat-button-secondary-hover-color;
+    }
+
+    .dig-touch-ripple {
+      .dig-ripple-circle-inner {
+        background-color: $flat-button-secondary-ripple-color;
+      }
+    }
+
+    .dig-focus-ripple {
+      .dig-focus-ripple-inner {
+        background-color: $flat-button-secondary-focus-ripple-color;
+      }
+    }
+  }
+}

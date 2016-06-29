@@ -1,0 +1,46 @@
+@mixin motion-common() {
+  @include animation-duration($animation-duration-base);
+  @include animation-fill-mode(both);
+}
+
+@mixin motion-common-leave() {
+  @include animation-duration($animation-duration-base);
+  @include animation-fill-mode(both);
+}
+
+@mixin make-motion($className, $keyframeName) {
+  .#{$className}-enter,
+  .#{$className}-appear {
+    @include motion-common();
+    animation-play-state: paused;
+  }
+  .#{$className}-leave {
+    @include motion-common-leave();
+    animation-play-state: paused;
+  }
+  .#{$className}-enter.#{$className}-enter-active,
+  .#{$className}-appear.#{$className}-appear-active {
+    @include animation-name("#{$keyframeName}In");
+    animation-play-state: running;
+  }
+  .#{$className}-leave.#{$className}-leave-active {
+    @include animation-name("#{$keyframeName}Out");
+    animation-play-state: running;
+  }
+}
+
+//todo
+.ant-motion-collapse {
+  overflow: hidden;
+}
+
+.ant-motion-collapse-active {
+  transition: height .2s ease-out;
+}
+
+@import "motion/fade";
+@import "motion/move";
+@import "motion/other";
+@import "motion/slide";
+@import "motion/swing";
+@import "motion/zoom";

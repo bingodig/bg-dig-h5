@@ -1,0 +1,25 @@
+@import "clearfix";
+@import "no-wrap";
+@import "size";
+@import "transitions";
+
+@mixin iconfont-size-under-12px($size, $rotate: 0deg) {
+  display: inline-block;
+  $font-scale: unit($size / $font-size-base);
+  font-size: $font-size-base;
+  transform: scale($font-scale) rotate($rotate);
+  :root & {
+    font-size: $font-size-base; // reset ie9 and above
+  }
+}
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+//$iconfont-css-prefix    : digicon;
+//$icon-url               : "../fonts/digicons";

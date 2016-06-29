@@ -1,0 +1,193 @@
+.dig-panel {
+  background: #fff;
+  border-radius:2px;
+  position:relative;
+
+  .header {
+    text-align: left;
+    padding: 20px;
+    background: #F5F5F5;
+    height: $app-bar-height;
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      float: left;
+      color: $black;
+    }
+
+    .sub-title{
+      font-size: 14px;
+      font-weight: 600;
+      float: left;
+      margin-left: 10px;
+      margin-top: 4px;
+      color: rgba(0,0,0,.54);
+    }
+
+    .header-right {
+      position: absolute;
+      right: 6px;
+      top: 6px;
+      color: $black;
+    }
+  }
+  .panelWrap {
+    border-radius: 2px;
+    border: 1px solid #F5F5F5;
+
+    &.notopborder {
+      border-top: 0;
+    }
+  }
+
+  &.dig-is-primary {
+    .header {
+      background: $primary-1-color;
+
+      .title {
+        color: $white;
+      }
+
+      .sub-title{
+        color: $grey-200;
+      }
+
+      .header-right {
+        color: $white;
+      }
+    }
+    .panelWrap {
+      border: 1px solid $primary-1-color;
+    }
+  }
+
+  &.dig-is-secondary {
+    .header {
+      background: $accent-1-color;
+
+      .title {
+        color: $white;
+      }
+
+      .sub-title{
+        color: $grey-200;
+      }
+
+      .header-right {
+        color: $white;
+      }
+    }
+    .panelWrap {
+      border: 1px solid $accent-1-color;
+    }
+  }
+
+  &.dig-is-info {
+    .header {
+      background: $info-color;
+
+      .title {
+        color: $white;
+      }
+
+      .sub-title{
+        color: $grey-200;
+      }
+
+      .header-right {
+        color: $white;
+      }
+    }
+    .panelWrap {
+      border: 1px solid $info-color;
+    }
+  }
+
+  &.dig-is-success {
+    .header {
+      background: $success-color;
+
+      .title {
+        color: $white;
+      }
+
+      .sub-title{
+        color: $grey-200;
+      }
+
+      .header-right {
+        color: $white;
+      }
+    }
+    .panelWrap {
+      border: 1px solid $success-color;
+    }
+  }
+
+  &.dig-is-warning {
+    .header {
+      background: $warning-color;
+
+      .title {
+        color: $white;
+      }
+
+      .sub-title{
+        color: $grey-200;
+      }
+
+      .header-right {
+        color: $white;
+      }
+    }
+    .panelWrap {
+      border: 1px solid $warning-color;
+    }
+  }
+
+  &.dig-is-error {
+    .header {
+      background: $error-color;
+
+      .title {
+        color: $white;
+      }
+
+      .sub-title{
+        color: $grey-200;
+      }
+
+      .header-right {
+        color: $white;
+      }
+    }
+    .panelWrap {
+      border: 1px solid $error-color;
+    }
+  }
+
+  &.dig-dark-theme{
+    background: $dark-theme-panel;
+    .header {
+      background: $dark-theme-panel;
+
+      .title {
+        color: $dark-theme-font-color-1;
+      }
+
+      .sub-title{
+        color: $dark-theme-font-color-2;
+      }
+
+      .header-right {
+        color: $dark-theme-font-color-2;
+      }
+    }
+
+    .panelWrap {
+      border: 0;
+      border-top: 1px solid $dark-theme-border-color;
+    }
+  }
+}

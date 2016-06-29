@@ -1,0 +1,49 @@
+.dig-paper {
+
+  &.dig-rounded {
+    border-radius: 2px;
+
+    & > .dig-paper-container {
+      border-radius: 2px;
+    }
+  }
+
+  &.dig-circle {
+    border-radius: 50%;
+
+    & > .dig-paper-container {
+      border-radius: 50%;
+    }
+  }
+
+  & > .dig-paper-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  &.dig-z-depth-1 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+    & > .dig-z-depth-bottom { box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }
+  }
+
+  &.dig-z-depth-2 {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23);
+    & > .dig-z-depth-bottom { box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16); }
+  }
+
+  &.dig-z-depth-3 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23);
+    & > .dig-z-depth-bottom { box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19); }
+  }
+
+  &.dig-z-depth-4 {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.22);
+    & > .dig-z-depth-bottom { box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25); }
+  }
+
+  &.dig-z-depth-5 {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22);
+    & > .dig-z-depth-bottom { box-shadow: 0 19px 60px rgba(0, 0, 0, 0.30); }
+  }
+
+}

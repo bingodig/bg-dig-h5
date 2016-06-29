@@ -1,0 +1,16 @@
+.dig-enhanced-textarea {
+  .dig-enhanced-textarea-shadow,
+  .dig-enhanced-textarea-input {
+    width: 100%;
+    resize: none;
+  }
+
+  .dig-enhanced-textarea-input {
+    overflow: hidden;
+  }
+
+  .dig-enhanced-textarea-shadow {
+    transform: scale(0);
+    position: absolute;
+  }
+}

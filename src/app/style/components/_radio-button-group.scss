@@ -1,0 +1,10 @@
+.dig-radio-button-group {
+	display: flex;
+	justify-content: flex-start;
+	&.dig-direction-row {
+		flex-direction: row
+	}
+	&.dig-direction-column {
+		flex-direction: column
+	}
+}

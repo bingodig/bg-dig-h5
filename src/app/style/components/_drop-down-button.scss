@@ -1,0 +1,78 @@
+//$icon-width: 48px;
+
+.dig-drop-down-button {
+  display: inline-block;
+  //width: $icon-width !important;
+  position: relative;
+  //height: $desktop-toolbar-height;
+  font-size: $desktop-drop-down-menu-font-size;
+
+  &.dig-open {
+    .dig-icon-highlight {
+      background-color: rgba(0, 0, 0, .1);
+    }
+
+    .dig-drop-down-control,
+    .dig-drop-down-control:hover {
+      .dig-menu-control-bg {
+        opacity: 0;
+      }
+      .dig-drop-down-control-label {
+        top: ($desktop-toolbar-height / 2);
+        opacity: 0;
+      }
+    }
+
+    .dig-drop-down-container {
+      //min-width: 300px;
+      width: auto;
+      background-color: $white;
+      opacity: 1;
+    }
+
+    .dig-paper-container {
+      padding: 0px;
+    }
+  }
+
+  .dig-drop-down-container {
+    @include ease-out();
+    
+    width: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+
+  }
+
+  &.dig-leftBottom{
+    .dig-drop-down-container {
+      right: 13px;
+      top: 42px;
+    }
+  }
+
+  &.dig-RightBottom{
+    .dig-drop-down-container {
+      left: 12px;
+      top: 42px;
+    }
+  }
+
+  &.mid-size {
+    &.dig-leftBottom{
+      .dig-drop-down-container {
+        right: 15px;
+        top: 52px;
+      }
+    }
+
+    &.dig-RightBottom{
+      .dig-drop-down-container {
+        left: 12px;
+        top: 52px;
+      }
+    }
+  }
+}

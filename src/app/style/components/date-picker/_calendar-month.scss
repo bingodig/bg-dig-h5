@@ -1,0 +1,11 @@
+.dig-date-picker-calendar-month {
+
+  line-height: $calendar-month-button-size;
+  text-align: center;
+  padding: 8px 14px 0 14px;
+  background-color: $white;
+
+  .dig-date-picker-calendar-month-week {
+    @include clearfix();
+  }
+}

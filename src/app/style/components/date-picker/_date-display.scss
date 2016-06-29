@@ -1,0 +1,84 @@
+.dig-date-picker-date-display {
+  text-align: center;
+  position: relative;
+
+  .dig-date-picker-date-display-dow {
+    font-size: 13px;
+    height: 32px;
+    line-height: 32px;
+    background-color: $date-picker-select-color;
+    color: $date-picker-select-text-color;
+    border-radius: 2px 2px 0 0;
+  }
+
+  .dig-date-picker-date-display-date {
+    padding: 16px 0;
+    background-color: $date-picker-color;
+    color: $date-picker-text-color;
+  }
+
+  .dig-date-picker-date-display-month,
+  .dig-date-picker-date-display-year {
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    text-transform: uppercase;
+  }
+
+  .dig-date-picker-date-display-day {
+    margin: 6px 0;
+    line-height: 58px;
+    height: 58px;
+    font-size: 58px;
+  }
+
+  .dig-date-picker-date-display-year {
+    color: lighten($date-picker-text-color, 70%);
+  }
+}
+
+.dig-is-landscape {
+
+  .dig-date-picker-date-display {
+    * { @include ease-out(); }
+  }
+
+  .dig-date-picker-date-display-dow {
+    border-radius: 2px 0 0 0;
+  }
+
+  .dig-date-picker-date-display-date {
+    padding: 24px 0;
+  }
+
+  .dig-date-picker-date-display-day {
+    font-size: 76px;
+    line-height: 76px;
+    height: 76px;
+  }
+
+  .dig-date-picker-date-display-month,
+  .dig-date-picker-date-display-year {
+     font-size: 26px;
+     line-height: 26px;
+     height: 26px;
+  }
+
+  .dig-is-5week {
+    .dig-date-picker-date-display-date {
+      padding: 30px 0;
+    }
+    .dig-date-picker-date-display-day {
+      margin: 24px 0;
+    }
+  }
+
+  .dig-is-6week {
+    .dig-date-picker-date-display-date {
+      padding: 50px 0;
+    }
+    .dig-date-picker-date-display-day {
+      margin: 24px 0;
+    }
+  } 
+}

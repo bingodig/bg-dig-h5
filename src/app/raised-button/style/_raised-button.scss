@@ -1,0 +1,157 @@
+.dig-raised-button {
+
+  display: inline-block;
+  min-width: $button-min-width;
+  height: $button-height;
+
+  &.dig-min-size{
+    height: $button-min-height;
+    min-width: 0;
+  }
+
+  &, * { @include ease-out(); }
+
+  .dig-raised-button-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: $raised-button-color;
+    
+    //This is need so that ripples do not bleed
+    //past border radius.
+    //See: http://stackoverflow.com/questions/17298739/css-overflow-hidden-not-working-in-chrome-when-parent-has-border-radius-and-chil
+    transform: translate3d(0, 0, 0);
+
+    &.dig-is-keyboard-focused {
+      background-color: $raised-button-hover-color;
+    }
+
+    &.dig-is-disabled {
+      background-color: $raised-button-disabled-color;
+
+      .dig-raised-button-label {
+        color: $raised-button-disabled-text-color;
+      }
+
+      &:hover {
+        background-color: $raised-button-disabled-color;
+      }
+    }
+
+    .dig-font-icon {
+      @extend .dig-text-full-white;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      float: left;
+      padding-left: 12px;
+      line-height: 36px;
+      margin-right: -8px;
+      color: $black;
+    }
+  }
+
+  .dig-touch-ripple {
+    .dig-ripple-circle-inner {
+      background-color: $raised-button-ripple-color;
+    }
+  }
+
+  .dig-focus-ripple {
+    .dig-focus-ripple-inner {
+      background-color: $raised-button-focus-ripple-color;
+    }
+  }
+
+  .dig-raised-button-label {
+    position: relative;
+    @extend %dig-font-style-button;
+    margin: 0;
+    padding: 0 $desktop-gutter-less;
+    user-select: none;
+    line-height: $button-height;
+    color: $raised-button-text-color;
+    &.dig-min-size{
+      line-height: $button-min-height;
+      font-size: 12px;
+      padding: 0 9px;
+    }
+  }
+
+  &:hover {
+    .dig-raised-button-container {
+      background-color: $raised-button-hover-color;
+    }
+  }
+
+  &.dig-is-primary {
+
+    .dig-raised-button-container {
+      background-color: $raised-button-primary-color;
+
+      &.dig-is-keyboard-focused {
+        background-color: $raised-button-primary-hover-color;
+      }
+    }
+
+    .dig-touch-ripple {
+      .dig-ripple-circle-inner {
+        background-color: $raised-button-primary-ripple-color;
+      }
+    }
+
+    .dig-focus-ripple {
+      .dig-focus-ripple-inner {
+        background-color: $raised-button-primary-focus-ripple-color;
+      }
+    }
+
+    .dig-raised-button-label,
+    .dig-font-icon {
+      color: $raised-button-primary-text-color;
+    }
+
+    &:hover {
+      .dig-raised-button-container {
+        background-color: $raised-button-primary-hover-color;
+      }
+    }
+  }
+
+  &.dig-is-secondary {
+
+    .dig-raised-button-container {
+      background-color: $raised-button-secondary-color;
+
+      &.dig-is-keyboard-focused {
+        background-color: $raised-button-secondary-hover-color;
+      }
+    }
+
+    .dig-touch-ripple {
+      .dig-ripple-circle-inner {
+        background-color: $raised-button-secondary-ripple-color;
+      }
+    }
+
+    .dig-focus-ripple {
+      .dig-focus-ripple-inner {
+        background-color: $raised-button-secondary-focus-ripple-color;
+      }
+    }
+
+    .dig-raised-button-label,
+    .dig-font-icon {
+      color: $raised-button-secondary-text-color;
+    }
+
+    &:hover {
+      .dig-raised-button-container {
+        background-color: $raised-button-secondary-hover-color;
+      }
+    }
+  }
+}

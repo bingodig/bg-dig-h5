@@ -1,0 +1,52 @@
+.dig-enhanced-switch {
+  $dig-switch-width: 60px;
+
+  position: relative;
+  cursor: pointer;
+  overflow: visible;
+  display: table;
+  height: auto;
+  width: 100%;
+
+  .dig-enhanced-switch-input {
+    position: absolute;
+    cursor: pointer;
+    pointer-events: all;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+  }
+
+  .dig-enhanced-switch-wrap {
+    @include ease-out();
+    float: left;
+    position: relative;
+    display: table-column;
+
+
+    .dig-touch-ripple,
+    .dig-focus-ripple-inner {
+      width: 200%;
+      height: 200%;
+      top: -12px;
+      left: -12px;
+    }
+  }
+
+  .dig-switch-label {
+    float: left;
+    position: relative;
+    display: table-column;
+    width: calc(100% - #{$dig-switch-width});
+    line-height: 24px;
+  }
+
+  &.dig-is-switched {
+    .dig-focus-ripple-inner,
+    .dig-ripple-circle-inner {
+      background-color: $switches-ripple-color;
+    }
+  }
+}
