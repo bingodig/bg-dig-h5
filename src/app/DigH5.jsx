@@ -17,26 +17,26 @@ var DigH5 = {
         TouchRipple: require("./ripples/touch-ripple.jsx")
     },
     Container: {
-        AppCanvas        		: require("./app-canvas/app-canvas.jsx"),                //找不到style                                                     
-        Paper            		: require("./paper/paper.jsx"),                     // ^_^                                                                                                          
-        DropDownContainer		: require("./drop-down-container/drop-down-container.jsx"),       //没有style？ 
+        AppCanvas        		: require("./app-canvas/app-canvas.jsx"),                                                                 
+        Paper            		: require("./paper/paper.jsx"),                                                                                                                               
+        DropDownContainer		: require("./drop-down-container/drop-down-container.jsx"),    
         Tab              		: require("./tabs/tab.jsx"),                                                                               
         Tabs             		: require("./tabs/tabs.jsx"),                                                                        
         Dialog           		: require("./dialog/dialog.jsx"),                                                                         
         DialogWindow     		: require("./dialog-window/dialog-window.jsx"),                            
         MediaQuery       		: require("./media-query/media-query.jsx"),          
         SilverlightHost  		: require("./silverlight-host/silverlight-host.jsx"),       
-        AutoResponsive   		: require("./auto-responsive/auto-responsive.jsx"),           //没有style？
-        Panel            		: require("./panel/panel.jsx"),                     // ^_^                                                                                                       
+        AutoResponsive   		: require("./auto-responsive/auto-responsive.jsx"),        
+        Panel            		: require("./panel/panel.jsx"),                                                                                                                            
         Carousel         		: require("./carousel/carousel.jsx"),                                                                                
-        Pagination       		: require("./pagination/pagination.jsx"),                // ^_^                                                                      
+        Pagination       		: require("./pagination/pagination.jsx"),                                                                                      
     },
     Layout: {                                                                 
-       Row: require("./layout/row.jsx"),                                  // ^_^    
-       Col: require("./layout/col.jsx")                                   // ^_^   
+       Row: require("./layout/row.jsx"),                                      
+       Col: require("./layout/col.jsx")                                      
     },
     Icon: {
-       FontIcon: require("./font-icon/font-icon.jsx"),                                  // ^_^   
+       FontIcon: require("./font-icon/font-icon.jsx"),                                     
        DropDownIcon: require("./drop-down-icon/drop-down-icon.jsx"),                
        SvgIcon: require("./svg-icons/svg-icon.jsx"),
        SvgIcons: {
@@ -80,11 +80,11 @@ var DigH5 = {
        FlatButton: require("./flat-button/flat-button.jsx"),
        RaisedButton: require("./raised-button/raised-button.jsx"),
        FloatingActionButton: require("./floating-action-button/floating-action-button.jsx"),
-       IconButton: require("./icon-button/icon-button.jsx"),                                    //tooltip的重复问题
-       DropDownButton: require("./drop-down-button/drop-down-button.jsx")                          //与drop-down-container联系
+       IconButton: require("./icon-button/icon-button.jsx"),                                  
+       DropDownButton: require("./drop-down-button/drop-down-button.jsx")                 
     },
     Animation: {
-       Animate: require("./animate/animate.jsx"),                                           //没有style？
+       Animate: require("./animate/animate.jsx"),                              
        QueueAnim: require("./queue-anim/queue-anim.jsx"),
        SlideInTransitionGroup: require("./transition-groups/slide-in.jsx")
     },

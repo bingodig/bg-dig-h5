@@ -1,51 +1,51 @@
 
-webpack-study
-├── docs
-├   ├── dist    					//打包目录
-├   ├── sass    					//sass文件
-├   ├── www     					//模板目录
-├   ├    ├── images	
-├   ├    └── index.html	
-├   └── index.jsx     				//入口文件
-├── node_modules					//依赖包
-├── src								//组件源文件
-├   ├── app 						//组件
-├   └── sass 						//样式
-├── webpack 						
-├   ├── console.msg.js          	//打印信息
-├   ├── webpack.loaders.js 			//加载器配置
-├   └── webpack.plugins.js 			//插件配置
-├── .babelrc	
-├── config.js 						//基础信息配置
-├── package.json	
-└── webpack.config.js   			//webpack配置
-	
-dist								//打包目录
-├── css
-├── js
-├── font
-├── images
-└── index.html
+# Bingo-dig-h5 Design 
+[![npm package](https://img.shields.io/npm/v/bg-dig-h5.svg?style=flat-square)](https://www.npmjs.org/package/bg-dig-h5) [![NPM downloads](http://img.shields.io/npm/dm/bg-dig-h5.svg?style=flat-square)](https://npmjs.org/package/bg-dig-h5)
 
-//介绍配置文件的相关内容
+一套企业级的 UI 设计语言和 React 实现。
 
-config.js 							//基础信息配置
-├── 基本配置						//比如出入口路径
-├── 打包配置						//设置dist里的文件目录
-└── 服务器配置						//服务器、端口号
-	
-webpack.loaders.js   				//加载器配置
-└── jsx,sass,images,fonts...		//针对不同类型文件配置不同加载器配置
-	
-webpack.plugins.js  				//插件配置
-├── 开发环境				
-├   ├── HotModuleReplacementPlugin 	//热加载
-├   ├── NoErrorsPlugin 				//加载器配置
-├   └── OpenBrowserPlugin			//自动打开浏览器
-├── 生产环境						
-├   └── UglifyJsPlugin				//压缩
-├── 公有							
-├   ├── CopyWebpackPlugin       	//复制模板
-├   ├── ExtractTextPlugin       	//分离CSS
-└── └── DefinePlugin				//插件配置# bg-dig-h5
-# bg-dig-h5
+## 特性
+
+- 提炼和服务企业级中后台产品的交互语言和视觉风格。
+- [React Component](http://react-component.github.io/badgeboard/) 上精心封装的高质量 UI 库。
+- 基于 npm + webpack + babel 的工作流，支持 ES2015。
+
+
+## 安装
+
+```bash
+npm install bg-dig-h5
+```
+
+## 示例
+
+```jsx
+import { DatePicker } from 'bg-dig-h5';
+ReactDOM.render(<DatePicker />, mountNode);
+```
+
+引入样式：
+
+```jsx
+import 'bg-dig-h5/dist/bg-dig-h5.css';  // or 'bg-dig-h5/dist/bg-dig-h5.less'
+```
+
+## 浏览器支持
+
+现代浏览器和 IE9 及以上。
+
+> [IE9 issues](https://github.com/xcatliu/react-ie9)
+
+## 链接
+
+- [首页](http://dig.projects.bingosoft.net:8081/h5/#/get-started)
+- [修改记录](http://dig.projects.bingosoft.net:8081/h5/#/changeLog)
+- [React 组件](http://react-component.github.io/)
+- [React 代码规范](https://github.com/react-component/react-component.github.io/blob/master/docs/zh-cn/component-code-style.md)
+- [网站和组件开发说明](http://dig.projects.bingosoft.net:8081/h5/#/get-started)
+- [版本发布手册](http://dig.projects.bingosoft.net:8081/h5/#/changeLog)
+
+
+## 如何贡献
+
+我们欢迎任何形式的贡献，有任何建议或意见您可以发邮箱：bingodig@163.com

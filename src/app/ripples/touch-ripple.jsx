@@ -4,6 +4,8 @@ var Classable = require('../../mixins/classable');
 var Dom = require('../../utils/dom');
 var RippleCircle = require('./circle');
 
+require('./style/index.scss');
+
 var TouchRipple = React.createClass({
 
 	mixins: [Classable],

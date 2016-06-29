@@ -2,6 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Classable = require('../../mixins/classable');
 
+require('./style/index.scss');
+
 var FocusRipple = React.createClass({
 
 	mixins: [Classable],
