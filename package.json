@@ -21,10 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ant-design/ant-design"
-  },
-  "bugs": {
-    "url": "https://github.com/ant-design/ant-design/issues"
+    "url": "https://github.com/bingodig/bg-dig-h5"
   },
   "devDependencies": {
     "autoresponsive-react": "^1.1.10",
