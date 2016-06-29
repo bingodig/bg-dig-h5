@@ -48,3 +48,4 @@ webpack.plugins.js  				//插件配置
 ├   ├── CopyWebpackPlugin       	//复制模板
 ├   ├── ExtractTextPlugin       	//分离CSS
 └── └── DefinePlugin				//插件配置# bg-dig-h5
+# bg-dig-h5
