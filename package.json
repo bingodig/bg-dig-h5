@@ -1,8 +1,8 @@
 {
   "name": "bg-dig-h5",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "use React, Material UI For Bingo",
-  "main": "index.js",
+  "main": "src/app/DigH5.jsx",
   "scripts": {
     "build": "SET NODE_ENV=production&webpack --progress --colors --config",
     "dev": "SET NODE_ENV=development&webpack-dev-server --hot --inline",
