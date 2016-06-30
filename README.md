@@ -20,14 +20,15 @@ npm install bg-dig-h5
 ## 示例
 
 ```jsx
-import { DatePicker } from 'bg-dig-h5';
-ReactDOM.render(<DatePicker />, mountNode);
+import { Container } from 'bg-dig-h5';
+const { Paner } = Container;
+ReactDOM.render(<Paner />, mountNode);
 ```
 
 引入样式：
 
 ```jsx
-import 'bg-dig-h5/dist/bg-dig-h5.css';  // or 'bg-dig-h5/dist/bg-dig-h5.less'
+@import "~bg-dig-h5/src/app/style/main.scss";
 ```
 
 ## 浏览器支持
