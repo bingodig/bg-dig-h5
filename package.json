@@ -1,6 +1,6 @@
 {
   "name": "bg-dig-h5",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "use React, Material UI For Bingo",
   "main": "src/app/DigH5.jsx",
   "scripts": {

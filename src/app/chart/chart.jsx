@@ -1,12 +1,13 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var echarts = require('echarts');
+var echarts = require('./echarts/echarts.jsx');
+var assign = require('object-assign');
 
 var Chart = React.createClass({
 
 	getDefaultProps: function() {
 	  return {
-		  option: {}
+		  option: {series : []}
 	  };
 	},
 
@@ -14,6 +15,10 @@ var Chart = React.createClass({
 		this._setContainSize();
         var chartContainer = ReactDOM.findDOMNode(this.refs.chartContainer);
 		this.chart = echarts.init(chartContainer);
+		if(!this.props.option.series){
+			var option = {series : []};
+			assign(this.props.option, option);
+		}
 		this.chart.setOption(this.props.option);
 
 		//param to parentClass,role event call 
@@ -26,6 +31,10 @@ var Chart = React.createClass({
 
 	componentWillReceiveProps: function(nextProps) {
 		if (this.isMounted()) {
+			if(!nextProps.option.series){
+				var option = {series : []};
+				assign(nextProps.option, option);
+			}
 			this.chart.setOption(nextProps.option);
 		}
 	},

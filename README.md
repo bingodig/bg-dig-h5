@@ -31,12 +31,6 @@ ReactDOM.render(<Paner />, mountNode);
 @import "~bg-dig-h5/src/app/style/main.scss";
 ```
 
-## 浏览器支持
-
-现代浏览器和 IE9 及以上。
-
-> [IE9 issues](https://github.com/xcatliu/react-ie9)
-
 ## 链接
 
 - [首页](http://dig.projects.bingosoft.net:8081/h5/#/get-started)
