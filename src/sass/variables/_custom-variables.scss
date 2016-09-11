@@ -1,0 +1,310 @@
+// Feel free to change this file to customize your app.
+// This is place to put any variable overrides as well.
+
+//Typography
+$headingFontFamily: "Microsoft YaHei", sans-serif !default;
+$contentFontFamily: "Microsoft YaHei", sans-serif !default;
+
+//App Colors
+// $primary-1-color: $cyan-500 !default;
+// $primary-2-color: $cyan-700 !default;
+// $primary-3-color: $cyan-100 !default;
+// $accent-1-color: $pink-A200 !default;
+// $accent-2-color: $pink-A400 !default;
+// $accent-3-color: $pink-A100 !default;
+
+// $primary-1-color: $deep-purple-500 !default;
+// $primary-2-color: $deep-purple-700 !default;
+// $primary-3-color: $deep-purple-100 !default;
+$primary-1-color: #017fe1 !default;
+$primary-2-color: #2566d1 !default;
+$primary-3-color: $blue-100 !default;
+$accent-1-color: $red-A200 !default;
+$accent-2-color: $red-A400 !default;
+$accent-3-color: $red-A100 !default;
+
+$info-color             : #2db7f5 !default;
+$success-color          : #87d068 !default;
+$warning-color          : #fa0 !default;
+$error-color            : #f50 !default;
+
+$font-size-base         : 12px !default;
+$line-height-base       : 1.5 !default;
+$text-color             : #666 !default;
+
+//Text Colors
+$body-text-color: $dark-black !default;
+
+//Border Colors
+$border-color: $grey-300 !default;
+$border-color-split     : #e9e9e9 !default;
+$border-color-base      : #d9d9d9 !default;        // base border outline a component
+$border-radius-base     : 6px !default;
+$box-shadow-base        : 0 0 4px rgba(0, 0, 0, 0.17) !default;
+
+$animation-duration-base: .2s !default;
+
+//Component Colors
+$app-bar-color: $primary-1-color !default;
+$app-bar-hover-color: darken($app-bar-color, 10%) !default;
+$app-bar-text-color: $dark-white !default;
+$canvas-color: $white !default;
+$drop-down-menu-icon-color: $min-black !default;
+$left-nav-color: $white !default;
+$subheader-border-color: $border-color !default;
+$subheader-text-color: $primary-1-color !default;
+
+//Disabled Colors
+$disabled-color: rgba($body-text-color, 0.3);
+
+
+// layout
+$app-bar-height: $desktop-keyline-increment !default;
+$left-nav-width: ($desktop-keyline-increment * 4) !default;
+
+// Animation
+$ease-out            : cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in             : cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-in-out         : cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-out-back       : cubic-bezier(0.12, 0.4, 0.29, 1.46);
+$ease-in-back        : cubic-bezier(0.71, -0.46, 0.88, 0.6);
+$ease-in-out-back    : cubic-bezier(0.71, -0.46, 0.29, 1.46);
+$ease-out-circ       : cubic-bezier(0.08, 0.82, 0.17, 1);
+$ease-in-circ        : cubic-bezier(0.6, 0.04, 0.98, 0.34);
+$ease-in-out-circ    : cubic-bezier(0.78, 0.14, 0.15, 0.86);
+$ease-out-quint      : cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-quint       : cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-in-out-quint   : cubic-bezier(0.86, 0, 0.07, 1);
+
+// z-index list
+$zindex-affix           : 10;
+$zindex-modal-mask      : 990;
+$zindex-modal           : 1000;
+$zindex-notification    : 1010;
+$zindex-message         : 1010;
+$zindex-popover         : 1030;
+$zindex-picker          : 1050;
+$zindex-dropdown        : 1050;
+$zindex-tooltip         : 1060;
+
+// Media queries breakpoints
+// Extra small screen / phone
+$screen-xs              : 480px;
+$screen-xs-min          : $screen-xs;
+$screen-xs-max          : ($screen-xs-min - 1);
+
+// Small screen / tablet
+$screen-sm              : 768px;
+$screen-sm-min          : $screen-sm;
+$screen-sm-max          : ($screen-sm-min - 1);
+
+// Medium screen / desktop
+$screen-md              : 992px;
+$screen-md-min          : $screen-md;
+$screen-md-max          : ($screen-md-min - 1);
+
+// Large screen / wide desktop
+$screen-lg              : 1200px;
+$screen-lg-min          : $screen-lg;
+$screen-lg-max          : ($screen-lg-min - 1);
+
+// Layout and Grid system
+$grid-columns           : 24;
+$grid-gutter-width      : 0;
+
+// Container sizes
+$container-sm           : (720px + $grid-gutter-width);
+$container-md           : (940px + $grid-gutter-width);
+$container-lg           : (1140px + $grid-gutter-width);
+
+// buttons
+$button-height: 36px !default;
+$button-min-height: 24px !default;
+$button-min-width: 88px !default;
+
+
+
+$dark-theme-bg: #1d2226;
+$dark-theme-panel: #2f3336;
+$dark-theme-font-color-1: $grey-100;
+$dark-theme-font-color-2: #8497a8;
+$dark-theme-border-color: #424648;
+$dark-theme-primary-1-color: #0eaa9d;
+$dark-theme-primary-2-color: #08b152;
+$dark-theme-accent-1-color: #fffc00;
+$dark-theme-accent-2-color: #e45800;
+$dark-theme-accent-3-color: #606b74;
+
+
+
+//Date Picker
+$date-picker-color: $primary-1-color !default;
+$date-picker-text-color: $white !default;
+$date-picker-calendar-text-color: $body-text-color !default;
+$date-picker-select-color: $primary-2-color !default;
+$date-picker-select-text-color: $white !default;
+
+// menu
+$menu-background-color: $white !default;
+$menu-background-hover-color: darken($menu-background-color, 0.1) !default;
+$menu-item-data-height: 32px !default;
+$menu-item-height: 48px !default;
+//$menu-item-hover-color: rgba(0, 0, 0, .035) !default;
+$menu-item-hover-color: $primary-3-color !default;
+$menu-item-padding: $desktop-gutter !default;
+$menu-item-selected-text-color: $accent-1-color !default;
+$menu-container-background-color: white !default;
+$menu-subheader-padding: $desktop-gutter !default;
+
+
+
+$flat-button-color: $white !default;
+$flat-button-hover-color: darken($flat-button-color, 20%) !default;
+$flat-button-text-color: $body-text-color !default;
+$flat-button-ripple-color: rgba(0,0,0,0.1) !default;
+$flat-button-focus-ripple-color: rgba($flat-button-ripple-color, 0.07) !default;
+$flat-button-primary-hover-color: lighten($primary-1-color, 32%) !default;
+$flat-button-primary-text-color: $primary-1-color !default;
+$flat-button-primary-ripple-color: rgba($flat-button-primary-text-color, 0.2) !default;
+$flat-button-primary-focus-ripple-color: rgba($flat-button-primary-ripple-color, 0.2) !default;
+$flat-button-secondary-hover-color: lighten($accent-1-color, 32%) !default;
+$flat-button-secondary-text-color: $accent-1-color !default;
+$flat-button-secondary-ripple-color: rgba($flat-button-secondary-text-color, 0.2) !default;
+$flat-button-secondary-focus-ripple-color: rgba($flat-button-secondary-ripple-color, 0.2) !default;
+$flat-button-disabled-text-color: rgba($flat-button-text-color, 0.3) !default;
+
+$raised-button-color: $white !default;
+$raised-button-hover-color: darken($raised-button-color, 10%) !default;
+$raised-button-text-color: $body-text-color !default;
+$raised-button-ripple-color: rgba(0,0,0,0.1) !default;
+$raised-button-focus-ripple-color: rgba($raised-button-ripple-color, 0.7) !default;
+$raised-button-primary-color: $primary-1-color !default;
+$raised-button-primary-hover-color: darken($primary-1-color, 15%) !default;
+$raised-button-primary-text-color: $white !default;
+$raised-button-primary-ripple-color: rgba($white, 0.50) !default;
+$raised-button-primary-focus-ripple-color: $raised-button-primary-ripple-color !default;
+$raised-button-secondary-color: $accent-1-color !default;
+$raised-button-secondary-hover-color: darken($accent-1-color, 4%) !default;
+$raised-button-secondary-text-color: $white !default;
+$raised-button-secondary-ripple-color: rgba($white, 0.50) !default;
+$raised-button-secondary-focus-ripple-color: $raised-button-secondary-ripple-color !default;
+$raised-button-disabled-color: $raised-button-hover-color !default;
+$raised-button-disabled-text-color: rgba($raised-button-text-color, 0.3) !default;
+
+$floating-action-button-size: 56px !default;
+$floating-action-button-mini-size: 40px !default;
+$floating-action-button-color: $primary-1-color !default;
+$floating-action-button-icon-color: $white !default;
+$floating-action-button-hover-color: $raised-button-primary-hover-color !default;
+$floating-action-button-ripple-color: $raised-button-primary-ripple-color !default;
+$floating-action-button-focus-ripple-color: $raised-button-primary-ripple-color !default;
+$floating-action-button-secondary-color: $accent-1-color !default;
+$floating-action-button-secondary-icon-color: $white !default;
+$floating-action-button-secondary-hover-color: $raised-button-secondary-hover-color !default;
+$floating-action-button-secondary-ripple-color: $raised-button-secondary-ripple-color !default;
+$floating-action-button-secondary-focus-ripple-color: $raised-button-secondary-ripple-color !default;
+$floating-action-button-disabled-color: $raised-button-disabled-color !default;
+$floating-action-button-disabled-text-color: $raised-button-disabled-text-color !default;
+
+// input
+$input-width: 320px !default;
+$input-font-size: 16px !default;
+$input-placeholder-size: 13px !default;
+$input-error-color: red !default;
+$input-bar-height: 2px !default;
+
+// switches
+$switches-ripple-color: rgba($primary-1-color, 0.2) !default;
+
+// radio button
+$radio-button-size: 24px !default;
+$radio-button-border-color:  $body-text-color !default;
+$radio-button-background-color: white !default;
+$radio-button-checked-color: $primary-1-color !default;
+$radio-button-required-color: $primary-1-color !default;
+$radio-button-disabled-color: $disabled-color !default;
+
+// checkbox
+$checkbox-box-color: $body-text-color !default;
+$checkbox-checked-color: $primary-1-color !default;
+$checkbox-required-color: $primary-1-color !default;
+$checkbox-disabled-color: $disabled-color !default;
+
+// snackbar
+$dig-snackbar-text-color: white !default;
+$dig-snackbar-background-color: #323232 !default;
+$dig-snackbar-action-color: $accent-1-color !default;
+
+// toggle
+$toggle-size: 20px !default;
+$toggle-thumb-on-color: $primary-1-color !default;
+$toggle-thumb-off-color: $grey-50 !default;
+$toggle-thumb-disabled-color: $grey-400 !default;
+$toggle-thumb-required-color: $primary-1-color !default;
+$toggle-track-on-color: transparentize($toggle-thumb-on-color, 0.5) !default;
+$toggle-track-off-color: $min-black !default;
+$toggle-track-disabled-color: $faint-black !default;
+$toggle-track-required-color: transparentize($toggle-thumb-required-color, 0.5) !default;
+
+// toolbar
+$toolbar-background-color: darken(#eeeeee, 5%) !default;
+$toolbar-height: 56px !default;
+$toolbar-icon-color: rgba(0, 0, 0, .40) !default;
+$toolbar-separator-color: rgba(0, 0, 0, .175) !default;
+$toolbar-menu-hover-color: rgba(0, 0, 0, .10) !default;
+$toolbar-menu-hover-color: $white !default;
+
+// slider
+$slider-track-size: 2px !default;
+$slider-track-color: $min-black !default;
+$slider-track-color-selected: $grey-500 !default;
+$slider-handle-size: 12px !default;
+$slider-handle-size-active: $slider-handle-size * 2 !default;
+$slider-handle-size-disabled: 8px !default;
+$slider-handle-color-zero: $grey-400 !default;
+$slider-selection-color: $primary-1-color !default;
+
+// calendar
+$calendar-day-button-size: 32px !default;
+$calendar-month-button-size: 48px !default;
+$calendar-year-button-size: 56px !default;
+
+// tabs
+$tabs-text-color: $white !default;
+$tabs-background-color: $primary-1-color !default;
+$ink-bar-color: yellow !default;
+
+// table
+$table-header-background-color: $primary-1-color !default;
+$table-primary-color: $primary-1-color !default;
+$table-border-color: $dark-black !default;
+$table-row-hover-color: darken($white, 10%) !default;
+
+// list
+$list-baseline-grid: 8px !default;
+$list-h3-margin: 0 0 6px 0 !default;
+$list-h4-margin: 10px 0 5px 0 !default;
+$list-h4-font-weight: 400 !default;
+$list-header-line-height: 0.78em !default;
+$list-p-margin: 0 0 0px 0 !default;
+$list-p-line-height: 1.7em !default;
+$list-padding-top: $list-baseline-grid !default;
+$list-padding-right: 0px !default;
+$list-padding-left: 0px !default;
+$list-padding-bottom: $list-baseline-grid !default;
+$item-padding-top: 0px !default;
+$item-padding-right: 0px !default;
+$item-padding-left: 0px !default;
+$item-padding-bottom: 0px !default;
+$list-item-padding-vertical: 0px !default;
+$list-item-padding-horizontal: $list-baseline-grid * 2 !default;
+$list-item-primary-width: $list-baseline-grid * 7 !default;
+$list-item-primary-avatar-width: $list-baseline-grid * 5 !default;
+$list-item-primary-icon-width: $list-baseline-grid * 3 !default;
+$list-item-secondary-left-margin: $list-baseline-grid * 2 !default;
+$list-item-secondary-button-width: $list-baseline-grid * 6 !default;
+$list-item-text-padding-top: $list-baseline-grid * 2 !default;
+$list-item-text-padding-bottom: $list-baseline-grid * 2.5 !default;
+$list-item-inset-divider-offset: 12 * $list-baseline-grid !default;
+$list-item-hover-color: $primary-3-color !default;
+
